@@ -675,43 +675,43 @@
         </metadata-records>
       </connection>
       <aliases enabled='yes' />
-      <column caption='1 Tydzień' datatype='integer' name='[1 tydzień]' role='measure' type='quantitative' />
-      <column caption='2 Tydzień' datatype='integer' name='[2 tydzień]' role='measure' type='quantitative' />
-      <column caption='3 Tydzień' datatype='integer' name='[3 tydzień]' role='measure' type='quantitative' />
-      <column caption='4 Tydzień' datatype='integer' name='[4 tydzień]' role='measure' type='quantitative' />
-      <column caption='5 Tydzień' datatype='integer' name='[5 tydzień]' role='measure' type='quantitative' />
-      <column caption='6 Tydzień' datatype='integer' name='[6 tydzień]' role='measure' type='quantitative' />
-      <column caption='7 Tydzień' datatype='integer' name='[7 tydzień]' role='measure' type='quantitative' />
-      <column caption='8 Tydzień' datatype='integer' name='[8 tydzień]' role='measure' type='quantitative' />
+      <column caption='weight_1_week_puppy' datatype='integer' name='[1 tydzień]' role='measure' type='quantitative' />
+      <column caption='weight_2_week_puppy' datatype='integer' name='[2 tydzień]' role='measure' type='quantitative' />
+      <column caption='weight_3_week_puppy' datatype='integer' name='[3 tydzień]' role='measure' type='quantitative' />
+      <column caption='weight_4_week_puppy' datatype='integer' name='[4 tydzień]' role='measure' type='quantitative' />
+      <column caption='weight_5_week_puppy' datatype='integer' name='[5 tydzień]' role='measure' type='quantitative' />
+      <column caption='weight_6_week_puppy' datatype='integer' name='[6 tydzień]' role='measure' type='quantitative' />
+      <column caption='weight_7_week_puppy' datatype='integer' name='[7 tydzień]' role='measure' type='quantitative' />
+      <column caption='weight_8_week_puppy' datatype='integer' name='[8 tydzień]' role='measure' type='quantitative' />
       <column caption='litters' datatype='table' name='[__tableau_internal_object_id__].[mioty_96409578F62F456B81CF406A13C8666E]' role='measure' type='quantitative' />
       <column caption='male_dogs' datatype='table' name='[__tableau_internal_object_id__].[reproduktor_8315880BEFC64988B5C92FB0208A7B23]' role='measure' type='quantitative' />
       <column caption='female_dogs' datatype='table' name='[__tableau_internal_object_id__].[suka-hodowlana_20F0EDB21977411089547257938CF71A]' role='measure' type='quantitative' />
-      <column caption='puppy' datatype='table' name='[__tableau_internal_object_id__].[szczenie_450730142FC14892916C12BB5609CC89]' role='measure' type='quantitative' />
-      <column caption='Data Urodzenia (Reproduktor)' datatype='date' name='[data urodzenia (reproduktor)]' role='dimension' type='ordinal' />
-      <column caption='Data Urodzenia (Suka-Hodowlana)' datatype='date' name='[data urodzenia (suka-hodowlana)]' role='dimension' type='ordinal' />
-      <column caption='Data Urodzenia' datatype='date' name='[data urodzenia]' role='dimension' type='ordinal' />
-      <column caption='Id (Reproduktor)' datatype='integer' name='[id (reproduktor)]' role='dimension' type='ordinal' />
-      <column caption='Id (Suka-Hodowlana)' datatype='integer' name='[id (suka-hodowlana)]' role='dimension' type='ordinal' />
-      <column caption='Id (Szczenie)' datatype='integer' name='[id (szczenie)]' role='dimension' type='ordinal' />
-      <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
-      <column caption='Ilość Szczeniąt' datatype='integer' name='[ilość szczeniąt]' role='measure' type='quantitative' />
-      <column caption='Imie (Reproduktor)' datatype='string' name='[imie (reproduktor)]' role='dimension' type='nominal' />
-      <column caption='Imie' datatype='string' name='[imie]' role='dimension' type='nominal' />
-      <column caption='Litera Miotu' datatype='string' name='[litera miotu]' role='dimension' type='nominal' />
-      <column caption='Masa Ciała Urodzeniowa' datatype='integer' name='[masa ciała urodzeniowa]' role='measure' type='quantitative' />
-      <column caption='Matka' datatype='integer' name='[matka]' role='measure' type='quantitative' />
-      <column caption='Maść (Reproduktor)' datatype='string' name='[maść (reproduktor)]' role='dimension' type='nominal' />
-      <column caption='Maść (Szczenie)' datatype='string' name='[maść (szczenie)]' role='dimension' type='nominal' />
-      <column caption='Maść' datatype='string' name='[maść]' role='dimension' type='nominal' />
-      <column caption='Miot' datatype='integer' name='[miot]' role='measure' type='quantitative' />
-      <column caption='Ojciec' datatype='integer' name='[ojciec]' role='measure' type='quantitative' />
-      <column caption='Przydomek (Reproduktor)' datatype='string' name='[przydomek (reproduktor)]' role='dimension' type='nominal' />
-      <column caption='Przydomek' datatype='string' name='[przydomek]' role='dimension' type='nominal' />
-      <column caption='Płeć' datatype='string' name='[płeć]' role='dimension' type='nominal' />
-      <column caption='Uwagi (Reproduktor)' datatype='date' name='[uwagi (reproduktor)]' role='dimension' type='ordinal' />
-      <column caption='Uwagi (Suka-Hodowlana)' datatype='date' name='[uwagi (suka-hodowlana)]' role='dimension' type='ordinal' />
-      <column caption='Uwagi (Szczenie)' datatype='string' name='[uwagi (szczenie)]' role='dimension' type='nominal' />
-      <column caption='Uwagi' datatype='string' name='[uwagi]' role='dimension' type='nominal' />
+      <column caption='puppies' datatype='table' name='[__tableau_internal_object_id__].[szczenie_450730142FC14892916C12BB5609CC89]' role='measure' type='quantitative' />
+      <column caption='birth_date_male_dog' datatype='date' name='[data urodzenia (reproduktor)]' role='dimension' type='ordinal' />
+      <column caption='birth_date_female_dog' datatype='date' name='[data urodzenia (suka-hodowlana)]' role='dimension' type='ordinal' />
+      <column caption='birth_date_litter' datatype='date' name='[data urodzenia]' role='dimension' type='ordinal' />
+      <column caption='id_male_dog' datatype='integer' name='[id (reproduktor)]' role='dimension' type='ordinal' />
+      <column caption='id_female_dog' datatype='integer' name='[id (suka-hodowlana)]' role='dimension' type='ordinal' />
+      <column caption='id_puppy' datatype='integer' name='[id (szczenie)]' role='dimension' type='ordinal' />
+      <column caption='id_litter' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+      <column caption='num_of_puppies_litter' datatype='integer' name='[ilość szczeniąt]' role='measure' type='quantitative' />
+      <column caption='name_male_dog' datatype='string' name='[imie (reproduktor)]' role='dimension' type='nominal' />
+      <column caption='name_female_dog' datatype='string' name='[imie]' role='dimension' type='nominal' />
+      <column caption='code_litter' datatype='string' name='[litera miotu]' role='dimension' type='nominal' />
+      <column caption='birth_weight_puppy' datatype='integer' name='[masa ciała urodzeniowa]' role='measure' type='quantitative' />
+      <column caption='mother_id_female_dog_litter' datatype='integer' name='[matka]' role='measure' type='quantitative' />
+      <column caption='color_male_dog' datatype='string' name='[maść (reproduktor)]' role='dimension' type='nominal' />
+      <column caption='color_puppy' datatype='string' name='[maść (szczenie)]' role='dimension' type='nominal' />
+      <column caption='color_female_dog' datatype='string' name='[maść]' role='dimension' type='nominal' />
+      <column caption='litter_id' datatype='integer' name='[miot]' role='measure' type='quantitative' />
+      <column caption='father_id_male_dog_litter' datatype='integer' name='[ojciec]' role='measure' type='quantitative' />
+      <column caption='breeding_nickname_male_dog' datatype='string' name='[przydomek (reproduktor)]' role='dimension' type='nominal' />
+      <column caption='breeding_nickname_female_dog' datatype='string' name='[przydomek]' role='dimension' type='nominal' />
+      <column caption='gender_puppy' datatype='string' name='[płeć]' role='dimension' type='nominal' />
+      <column caption='death_date_male_dog' datatype='date' name='[uwagi (reproduktor)]' role='dimension' type='ordinal' />
+      <column caption='death_date_female_dog' datatype='date' name='[uwagi (suka-hodowlana)]' role='dimension' type='ordinal' />
+      <column caption='extras_puppy' datatype='string' name='[uwagi (szczenie)]' role='dimension' type='nominal' />
+      <column caption='extras_litter' datatype='string' name='[uwagi]' role='dimension' type='nominal' />
       <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
       <semantic-values>
         <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
@@ -762,7 +762,7 @@
               </relation>
             </properties>
           </object>
-          <object caption='puppy' id='szczenie_450730142FC14892916C12BB5609CC89'>
+          <object caption='puppies' id='szczenie_450730142FC14892916C12BB5609CC89'>
             <properties context=''>
               <relation connection='excel-direct.1jw26j0147k13e11hz8v312sgxgk' name='szczenie' table='[szczenie$]' type='table'>
                 <columns gridOrigin='A1:N147:no:A1:N147:0' header='yes' outcome='2'>
