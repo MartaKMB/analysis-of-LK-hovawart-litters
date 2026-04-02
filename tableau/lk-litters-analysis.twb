@@ -1,0 +1,895 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20261.26.0226.1626                               -->
+<workbook original-version='18.1' source-build='2026.1.0 (20261.26.0226.1626)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='mioty+ (transformed-hovawart-litters-lk)' inline='true' name='federated.157p3a41l7sm4x1g3uyqn0fsmavm' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='transformed-hovawart-litters-lk' name='excel-direct.1jw26j0147k13e11hz8v312sgxgk'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='/Users/martamucha-balcerek/Desktop/analityk danych/hovawart-lk-analysis/excel/transformed-hovawart-litters-lk.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation type='collection'>
+          <relation connection='excel-direct.1jw26j0147k13e11hz8v312sgxgk' name='mioty' table='[mioty$]' type='table'>
+            <columns gridOrigin='A1:G22:no:A1:G22:0' header='yes' outcome='6'>
+              <column datatype='integer' name='id' ordinal='0' />
+              <column datatype='string' name='litera miotu' ordinal='1' />
+              <column datatype='date' name='data urodzenia' ordinal='2' />
+              <column datatype='integer' name='matka' ordinal='3' />
+              <column datatype='integer' name='ojciec' ordinal='4' />
+              <column datatype='integer' name='ilość szczeniąt' ordinal='5' />
+              <column datatype='string' name='uwagi' ordinal='6' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.1jw26j0147k13e11hz8v312sgxgk' name='reproduktor' table='[reproduktor$]' type='table'>
+            <columns gridOrigin='A1:F20:no:A1:F20:0' header='yes' outcome='2'>
+              <column datatype='integer' name='id' ordinal='0' />
+              <column datatype='string' name='imie' ordinal='1' />
+              <column datatype='string' name='przydomek' ordinal='2' />
+              <column datatype='string' name='maść' ordinal='3' />
+              <column datatype='date' name='data urodzenia' ordinal='4' />
+              <column datatype='date' name='uwagi' ordinal='5' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.1jw26j0147k13e11hz8v312sgxgk' name='suka-hodowlana' table='[&apos;suka-hodowlana$&apos;]' type='table'>
+            <columns gridOrigin='A1:F9:no:A1:F9:0' header='yes' outcome='2'>
+              <column datatype='integer' name='id' ordinal='0' />
+              <column datatype='string' name='imie' ordinal='1' />
+              <column datatype='string' name='przydomek' ordinal='2' />
+              <column datatype='date' name='data urodzenia' ordinal='3' />
+              <column datatype='string' name='maść' ordinal='4' />
+              <column datatype='date' name='uwagi' ordinal='5' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.1jw26j0147k13e11hz8v312sgxgk' name='szczenie' table='[szczenie$]' type='table'>
+            <columns gridOrigin='A1:N147:no:A1:N147:0' header='yes' outcome='2'>
+              <column datatype='integer' name='id' ordinal='0' />
+              <column datatype='integer' name='miot' ordinal='1' />
+              <column datatype='string' name='maść' ordinal='2' />
+              <column datatype='string' name='płeć' ordinal='3' />
+              <column datatype='integer' name='masa ciała urodzeniowa' ordinal='4' />
+              <column datatype='integer' name='1 tydzień' ordinal='5' />
+              <column datatype='integer' name='2 tydzień' ordinal='6' />
+              <column datatype='integer' name='3 tydzień' ordinal='7' />
+              <column datatype='integer' name='4 tydzień' ordinal='8' />
+              <column datatype='integer' name='5 tydzień' ordinal='9' />
+              <column datatype='integer' name='6 tydzień' ordinal='10' />
+              <column datatype='integer' name='7 tydzień' ordinal='11' />
+              <column datatype='integer' name='8 tydzień' ordinal='12' />
+              <column datatype='string' name='uwagi' ordinal='13' />
+            </columns>
+          </relation>
+        </relation>
+        <cols>
+          <map key='[1 tydzień]' value='[szczenie].[1 tydzień]' />
+          <map key='[2 tydzień]' value='[szczenie].[2 tydzień]' />
+          <map key='[3 tydzień]' value='[szczenie].[3 tydzień]' />
+          <map key='[4 tydzień]' value='[szczenie].[4 tydzień]' />
+          <map key='[5 tydzień]' value='[szczenie].[5 tydzień]' />
+          <map key='[6 tydzień]' value='[szczenie].[6 tydzień]' />
+          <map key='[7 tydzień]' value='[szczenie].[7 tydzień]' />
+          <map key='[8 tydzień]' value='[szczenie].[8 tydzień]' />
+          <map key='[data urodzenia (reproduktor)]' value='[reproduktor].[data urodzenia]' />
+          <map key='[data urodzenia (suka-hodowlana)]' value='[suka-hodowlana].[data urodzenia]' />
+          <map key='[data urodzenia]' value='[mioty].[data urodzenia]' />
+          <map key='[id (reproduktor)]' value='[reproduktor].[id]' />
+          <map key='[id (suka-hodowlana)]' value='[suka-hodowlana].[id]' />
+          <map key='[id (szczenie)]' value='[szczenie].[id]' />
+          <map key='[id]' value='[mioty].[id]' />
+          <map key='[ilość szczeniąt]' value='[mioty].[ilość szczeniąt]' />
+          <map key='[imie (reproduktor)]' value='[reproduktor].[imie]' />
+          <map key='[imie]' value='[suka-hodowlana].[imie]' />
+          <map key='[litera miotu]' value='[mioty].[litera miotu]' />
+          <map key='[masa ciała urodzeniowa]' value='[szczenie].[masa ciała urodzeniowa]' />
+          <map key='[matka]' value='[mioty].[matka]' />
+          <map key='[maść (reproduktor)]' value='[reproduktor].[maść]' />
+          <map key='[maść (szczenie)]' value='[szczenie].[maść]' />
+          <map key='[maść]' value='[suka-hodowlana].[maść]' />
+          <map key='[miot]' value='[szczenie].[miot]' />
+          <map key='[ojciec]' value='[mioty].[ojciec]' />
+          <map key='[przydomek (reproduktor)]' value='[reproduktor].[przydomek]' />
+          <map key='[przydomek]' value='[suka-hodowlana].[przydomek]' />
+          <map key='[płeć]' value='[szczenie].[płeć]' />
+          <map key='[uwagi (reproduktor)]' value='[reproduktor].[uwagi]' />
+          <map key='[uwagi (suka-hodowlana)]' value='[suka-hodowlana].[uwagi]' />
+          <map key='[uwagi (szczenie)]' value='[szczenie].[uwagi]' />
+          <map key='[uwagi]' value='[mioty].[uwagi]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[mioty]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:G22:no:A1:G22:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[reproduktor]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:F20:no:A1:F20:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[suka-hodowlana]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:F9:no:A1:F9:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[szczenie]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:N147:no:A1:N147:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[id]</local-name>
+            <parent-name>[mioty]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[mioty_96409578F62F456B81CF406A13C8666E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>litera miotu</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[litera miotu]</local-name>
+            <parent-name>[mioty]</parent-name>
+            <remote-alias>litera miotu</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[mioty_96409578F62F456B81CF406A13C8666E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>data urodzenia</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[data urodzenia]</local-name>
+            <parent-name>[mioty]</parent-name>
+            <remote-alias>data urodzenia</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[mioty_96409578F62F456B81CF406A13C8666E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>matka</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[matka]</local-name>
+            <parent-name>[mioty]</parent-name>
+            <remote-alias>matka</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[mioty_96409578F62F456B81CF406A13C8666E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ojciec</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ojciec]</local-name>
+            <parent-name>[mioty]</parent-name>
+            <remote-alias>ojciec</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[mioty_96409578F62F456B81CF406A13C8666E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ilość szczeniąt</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ilość szczeniąt]</local-name>
+            <parent-name>[mioty]</parent-name>
+            <remote-alias>ilość szczeniąt</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[mioty_96409578F62F456B81CF406A13C8666E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>uwagi</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[uwagi]</local-name>
+            <parent-name>[mioty]</parent-name>
+            <remote-alias>uwagi</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[mioty_96409578F62F456B81CF406A13C8666E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[id (reproduktor)]</local-name>
+            <parent-name>[reproduktor]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[reproduktor_8315880BEFC64988B5C92FB0208A7B23]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>imie</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[imie (reproduktor)]</local-name>
+            <parent-name>[reproduktor]</parent-name>
+            <remote-alias>imie</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[reproduktor_8315880BEFC64988B5C92FB0208A7B23]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>przydomek</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[przydomek (reproduktor)]</local-name>
+            <parent-name>[reproduktor]</parent-name>
+            <remote-alias>przydomek</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[reproduktor_8315880BEFC64988B5C92FB0208A7B23]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>maść</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[maść (reproduktor)]</local-name>
+            <parent-name>[reproduktor]</parent-name>
+            <remote-alias>maść</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[reproduktor_8315880BEFC64988B5C92FB0208A7B23]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>data urodzenia</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[data urodzenia (reproduktor)]</local-name>
+            <parent-name>[reproduktor]</parent-name>
+            <remote-alias>data urodzenia</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[reproduktor_8315880BEFC64988B5C92FB0208A7B23]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>uwagi</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[uwagi (reproduktor)]</local-name>
+            <parent-name>[reproduktor]</parent-name>
+            <remote-alias>uwagi</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[reproduktor_8315880BEFC64988B5C92FB0208A7B23]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[id (suka-hodowlana)]</local-name>
+            <parent-name>[suka-hodowlana]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[suka-hodowlana_20F0EDB21977411089547257938CF71A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>imie</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[imie]</local-name>
+            <parent-name>[suka-hodowlana]</parent-name>
+            <remote-alias>imie</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[suka-hodowlana_20F0EDB21977411089547257938CF71A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>przydomek</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[przydomek]</local-name>
+            <parent-name>[suka-hodowlana]</parent-name>
+            <remote-alias>przydomek</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[suka-hodowlana_20F0EDB21977411089547257938CF71A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>data urodzenia</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[data urodzenia (suka-hodowlana)]</local-name>
+            <parent-name>[suka-hodowlana]</parent-name>
+            <remote-alias>data urodzenia</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[suka-hodowlana_20F0EDB21977411089547257938CF71A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>maść</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[maść]</local-name>
+            <parent-name>[suka-hodowlana]</parent-name>
+            <remote-alias>maść</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[suka-hodowlana_20F0EDB21977411089547257938CF71A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>uwagi</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[uwagi (suka-hodowlana)]</local-name>
+            <parent-name>[suka-hodowlana]</parent-name>
+            <remote-alias>uwagi</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[suka-hodowlana_20F0EDB21977411089547257938CF71A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[id (szczenie)]</local-name>
+            <parent-name>[szczenie]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[szczenie_450730142FC14892916C12BB5609CC89]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>miot</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[miot]</local-name>
+            <parent-name>[szczenie]</parent-name>
+            <remote-alias>miot</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[szczenie_450730142FC14892916C12BB5609CC89]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>maść</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[maść (szczenie)]</local-name>
+            <parent-name>[szczenie]</parent-name>
+            <remote-alias>maść</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[szczenie_450730142FC14892916C12BB5609CC89]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>płeć</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[płeć]</local-name>
+            <parent-name>[szczenie]</parent-name>
+            <remote-alias>płeć</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[szczenie_450730142FC14892916C12BB5609CC89]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>masa ciała urodzeniowa</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[masa ciała urodzeniowa]</local-name>
+            <parent-name>[szczenie]</parent-name>
+            <remote-alias>masa ciała urodzeniowa</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[szczenie_450730142FC14892916C12BB5609CC89]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>1 tydzień</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[1 tydzień]</local-name>
+            <parent-name>[szczenie]</parent-name>
+            <remote-alias>1 tydzień</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[szczenie_450730142FC14892916C12BB5609CC89]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2 tydzień</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[2 tydzień]</local-name>
+            <parent-name>[szczenie]</parent-name>
+            <remote-alias>2 tydzień</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[szczenie_450730142FC14892916C12BB5609CC89]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>3 tydzień</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[3 tydzień]</local-name>
+            <parent-name>[szczenie]</parent-name>
+            <remote-alias>3 tydzień</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[szczenie_450730142FC14892916C12BB5609CC89]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>4 tydzień</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[4 tydzień]</local-name>
+            <parent-name>[szczenie]</parent-name>
+            <remote-alias>4 tydzień</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[szczenie_450730142FC14892916C12BB5609CC89]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>5 tydzień</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[5 tydzień]</local-name>
+            <parent-name>[szczenie]</parent-name>
+            <remote-alias>5 tydzień</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[szczenie_450730142FC14892916C12BB5609CC89]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>6 tydzień</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[6 tydzień]</local-name>
+            <parent-name>[szczenie]</parent-name>
+            <remote-alias>6 tydzień</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[szczenie_450730142FC14892916C12BB5609CC89]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>7 tydzień</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[7 tydzień]</local-name>
+            <parent-name>[szczenie]</parent-name>
+            <remote-alias>7 tydzień</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[szczenie_450730142FC14892916C12BB5609CC89]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>8 tydzień</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[8 tydzień]</local-name>
+            <parent-name>[szczenie]</parent-name>
+            <remote-alias>8 tydzień</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[szczenie_450730142FC14892916C12BB5609CC89]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>uwagi</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[uwagi (szczenie)]</local-name>
+            <parent-name>[szczenie]</parent-name>
+            <remote-alias>uwagi</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[szczenie_450730142FC14892916C12BB5609CC89]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='1 Tydzień' datatype='integer' name='[1 tydzień]' role='measure' type='quantitative' />
+      <column caption='2 Tydzień' datatype='integer' name='[2 tydzień]' role='measure' type='quantitative' />
+      <column caption='3 Tydzień' datatype='integer' name='[3 tydzień]' role='measure' type='quantitative' />
+      <column caption='4 Tydzień' datatype='integer' name='[4 tydzień]' role='measure' type='quantitative' />
+      <column caption='5 Tydzień' datatype='integer' name='[5 tydzień]' role='measure' type='quantitative' />
+      <column caption='6 Tydzień' datatype='integer' name='[6 tydzień]' role='measure' type='quantitative' />
+      <column caption='7 Tydzień' datatype='integer' name='[7 tydzień]' role='measure' type='quantitative' />
+      <column caption='8 Tydzień' datatype='integer' name='[8 tydzień]' role='measure' type='quantitative' />
+      <column caption='litters' datatype='table' name='[__tableau_internal_object_id__].[mioty_96409578F62F456B81CF406A13C8666E]' role='measure' type='quantitative' />
+      <column caption='male_dogs' datatype='table' name='[__tableau_internal_object_id__].[reproduktor_8315880BEFC64988B5C92FB0208A7B23]' role='measure' type='quantitative' />
+      <column caption='female_dogs' datatype='table' name='[__tableau_internal_object_id__].[suka-hodowlana_20F0EDB21977411089547257938CF71A]' role='measure' type='quantitative' />
+      <column caption='puppy' datatype='table' name='[__tableau_internal_object_id__].[szczenie_450730142FC14892916C12BB5609CC89]' role='measure' type='quantitative' />
+      <column caption='Data Urodzenia (Reproduktor)' datatype='date' name='[data urodzenia (reproduktor)]' role='dimension' type='ordinal' />
+      <column caption='Data Urodzenia (Suka-Hodowlana)' datatype='date' name='[data urodzenia (suka-hodowlana)]' role='dimension' type='ordinal' />
+      <column caption='Data Urodzenia' datatype='date' name='[data urodzenia]' role='dimension' type='ordinal' />
+      <column caption='Id (Reproduktor)' datatype='integer' name='[id (reproduktor)]' role='dimension' type='ordinal' />
+      <column caption='Id (Suka-Hodowlana)' datatype='integer' name='[id (suka-hodowlana)]' role='dimension' type='ordinal' />
+      <column caption='Id (Szczenie)' datatype='integer' name='[id (szczenie)]' role='dimension' type='ordinal' />
+      <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+      <column caption='Ilość Szczeniąt' datatype='integer' name='[ilość szczeniąt]' role='measure' type='quantitative' />
+      <column caption='Imie (Reproduktor)' datatype='string' name='[imie (reproduktor)]' role='dimension' type='nominal' />
+      <column caption='Imie' datatype='string' name='[imie]' role='dimension' type='nominal' />
+      <column caption='Litera Miotu' datatype='string' name='[litera miotu]' role='dimension' type='nominal' />
+      <column caption='Masa Ciała Urodzeniowa' datatype='integer' name='[masa ciała urodzeniowa]' role='measure' type='quantitative' />
+      <column caption='Matka' datatype='integer' name='[matka]' role='measure' type='quantitative' />
+      <column caption='Maść (Reproduktor)' datatype='string' name='[maść (reproduktor)]' role='dimension' type='nominal' />
+      <column caption='Maść (Szczenie)' datatype='string' name='[maść (szczenie)]' role='dimension' type='nominal' />
+      <column caption='Maść' datatype='string' name='[maść]' role='dimension' type='nominal' />
+      <column caption='Miot' datatype='integer' name='[miot]' role='measure' type='quantitative' />
+      <column caption='Ojciec' datatype='integer' name='[ojciec]' role='measure' type='quantitative' />
+      <column caption='Przydomek (Reproduktor)' datatype='string' name='[przydomek (reproduktor)]' role='dimension' type='nominal' />
+      <column caption='Przydomek' datatype='string' name='[przydomek]' role='dimension' type='nominal' />
+      <column caption='Płeć' datatype='string' name='[płeć]' role='dimension' type='nominal' />
+      <column caption='Uwagi (Reproduktor)' datatype='date' name='[uwagi (reproduktor)]' role='dimension' type='ordinal' />
+      <column caption='Uwagi (Suka-Hodowlana)' datatype='date' name='[uwagi (suka-hodowlana)]' role='dimension' type='ordinal' />
+      <column caption='Uwagi (Szczenie)' datatype='string' name='[uwagi (szczenie)]' role='dimension' type='nominal' />
+      <column caption='Uwagi' datatype='string' name='[uwagi]' role='dimension' type='nominal' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='litters' id='mioty_96409578F62F456B81CF406A13C8666E'>
+            <properties context=''>
+              <relation connection='excel-direct.1jw26j0147k13e11hz8v312sgxgk' name='mioty' table='[mioty$]' type='table'>
+                <columns gridOrigin='A1:G22:no:A1:G22:0' header='yes' outcome='6'>
+                  <column datatype='integer' name='id' ordinal='0' />
+                  <column datatype='string' name='litera miotu' ordinal='1' />
+                  <column datatype='date' name='data urodzenia' ordinal='2' />
+                  <column datatype='integer' name='matka' ordinal='3' />
+                  <column datatype='integer' name='ojciec' ordinal='4' />
+                  <column datatype='integer' name='ilość szczeniąt' ordinal='5' />
+                  <column datatype='string' name='uwagi' ordinal='6' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='male_dogs' id='reproduktor_8315880BEFC64988B5C92FB0208A7B23'>
+            <properties context=''>
+              <relation connection='excel-direct.1jw26j0147k13e11hz8v312sgxgk' name='reproduktor' table='[reproduktor$]' type='table'>
+                <columns gridOrigin='A1:F20:no:A1:F20:0' header='yes' outcome='2'>
+                  <column datatype='integer' name='id' ordinal='0' />
+                  <column datatype='string' name='imie' ordinal='1' />
+                  <column datatype='string' name='przydomek' ordinal='2' />
+                  <column datatype='string' name='maść' ordinal='3' />
+                  <column datatype='date' name='data urodzenia' ordinal='4' />
+                  <column datatype='date' name='uwagi' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='female_dogs' id='suka-hodowlana_20F0EDB21977411089547257938CF71A'>
+            <properties context=''>
+              <relation connection='excel-direct.1jw26j0147k13e11hz8v312sgxgk' name='suka-hodowlana' table='[&apos;suka-hodowlana$&apos;]' type='table'>
+                <columns gridOrigin='A1:F9:no:A1:F9:0' header='yes' outcome='2'>
+                  <column datatype='integer' name='id' ordinal='0' />
+                  <column datatype='string' name='imie' ordinal='1' />
+                  <column datatype='string' name='przydomek' ordinal='2' />
+                  <column datatype='date' name='data urodzenia' ordinal='3' />
+                  <column datatype='string' name='maść' ordinal='4' />
+                  <column datatype='date' name='uwagi' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='puppy' id='szczenie_450730142FC14892916C12BB5609CC89'>
+            <properties context=''>
+              <relation connection='excel-direct.1jw26j0147k13e11hz8v312sgxgk' name='szczenie' table='[szczenie$]' type='table'>
+                <columns gridOrigin='A1:N147:no:A1:N147:0' header='yes' outcome='2'>
+                  <column datatype='integer' name='id' ordinal='0' />
+                  <column datatype='integer' name='miot' ordinal='1' />
+                  <column datatype='string' name='maść' ordinal='2' />
+                  <column datatype='string' name='płeć' ordinal='3' />
+                  <column datatype='integer' name='masa ciała urodzeniowa' ordinal='4' />
+                  <column datatype='integer' name='1 tydzień' ordinal='5' />
+                  <column datatype='integer' name='2 tydzień' ordinal='6' />
+                  <column datatype='integer' name='3 tydzień' ordinal='7' />
+                  <column datatype='integer' name='4 tydzień' ordinal='8' />
+                  <column datatype='integer' name='5 tydzień' ordinal='9' />
+                  <column datatype='integer' name='6 tydzień' ordinal='10' />
+                  <column datatype='integer' name='7 tydzień' ordinal='11' />
+                  <column datatype='integer' name='8 tydzień' ordinal='12' />
+                  <column datatype='string' name='uwagi' ordinal='13' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[ojciec]' />
+              <expression op='[id (reproduktor)]' />
+            </expression>
+            <first-end-point object-id='mioty_96409578F62F456B81CF406A13C8666E' />
+            <second-end-point object-id='reproduktor_8315880BEFC64988B5C92FB0208A7B23' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[matka]' />
+              <expression op='[id (suka-hodowlana)]' />
+            </expression>
+            <first-end-point object-id='mioty_96409578F62F456B81CF406A13C8666E' />
+            <second-end-point object-id='suka-hodowlana_20F0EDB21977411089547257938CF71A' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[id]' />
+              <expression op='[miot]' />
+            </expression>
+            <first-end-point object-id='mioty_96409578F62F456B81CF406A13C8666E' />
+            <second-end-point object-id='szczenie_450730142FC14892916C12BB5609CC89' />
+          </relationship>
+        </relationships>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{7933666C-EC29-4EB9-943F-5583D6335BED}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{628CD513-ECFE-4F65-8835-6ABB6598B4DE}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='384' name='Sheet 1' width='384'>
+      iVBORw0KGgoAAAANSUhEUgAAAYAAAAGACAYAAACkx7W/AAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAFXUlEQVR4nO3VMQEAIAzAMMC/5yFjRxMF/XpnZg4AOW87AIAdBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABR
+      BgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUA
+      AFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQ
+      ZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABR
+      BgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUA
+      AFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQ
+      ZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABR
+      BgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUA
+      AFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQ
+      ZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEfFxoG/IiMv0YAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
